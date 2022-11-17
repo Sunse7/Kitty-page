@@ -7,8 +7,24 @@ body {
     background-color: #F8F8F8;
 }
 
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    margin: 40px 30px 50px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hamburger-menu {
-    
+    display: flex;
+    align-self: flex-end;
 }
 
 .menu {
@@ -20,12 +36,21 @@ a {
     color: #0C1B33;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem;
+    margin-bottom: 50px;
+}
+
 h1 {
     font-size: 42px;
+    margin-bottom: 30px;
 }
 
 p {
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 button {
@@ -35,6 +60,7 @@ button {
     border: none;
     border-radius: 6px;
     padding: 14px 20px;
+    margin: auto;
 }
 
 .image--big {
@@ -42,13 +68,29 @@ button {
 }
 
 
-@media screen and (min-width: 412px) { /*700px ist? Så bilden får plats*/
+@media screen and (min-width: 700px) { 
     .hamburger-menu {
         display: none;
     }
 
     .menu {
         display: block;
+        display: flex;
+        align-self: flex-end;
+    }
+    
+    .menu a {
+        margin-right: 6.25rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    article {
+        margin-right: 40px;
     }
 
     .image--small {
